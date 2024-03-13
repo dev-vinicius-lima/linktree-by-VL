@@ -4,6 +4,8 @@ import Admin from "./pages/Admin";
 import Login from "./pages/Login";
 import Networks from "./pages/Networks";
 
+import Private from "./pages/routes/Private";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,11 +17,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <Admin />,
+    element: (
+      <Private>
+        <Admin />
+      </Private>
+    ),
   },
   {
     path: "/admin/social",
-    element: <Networks />,
+    element: (
+      <Private>
+        <Networks />
+      </Private>
+    ),
   },
 ]);
 
