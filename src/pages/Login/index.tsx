@@ -1,7 +1,19 @@
-import React from "react";
+import { FormEvent, useState } from "react";
 import { Link } from "react-router-dom";
+import Input from "../../components/Input";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    console.log({
+      email: email,
+      password: password,
+    });
+  }
+
   return (
     <div className="flex w-full h-screen items-center flex-col">
       <Link to={"/"}>
@@ -12,6 +24,29 @@ const Login = () => {
           </span>
         </h1>
       </Link>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-xl flex flex-col px-3"
+      >
+        <Input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="exemplo@hotmail.com"
+        />
+        <Input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="********"
+        />
+        <button
+          type="submit"
+          className="h-9 bg-blue-600 rounded-md border-0 text-lg font-medium - text-white"
+        >
+          Acessar
+        </button>
+      </form>
     </div>
   );
 };
