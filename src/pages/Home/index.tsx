@@ -75,7 +75,7 @@ const Home = () => {
       </h1>
 
       <Link
-        to={"/login"}
+        to={"/admin"}
         className="py-1 px-5 mb-4 w-40 bg-yellow-500 h-9 flex items-center justify-center rounded-lg  hover:bg-slate-50 hover:text-yellow-500"
       >
         Login
