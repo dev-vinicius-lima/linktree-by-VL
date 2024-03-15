@@ -47,7 +47,6 @@ const Home = () => {
           });
         });
         setLinks(list);
-        console.log(links);
       });
     }
     loadLinks();

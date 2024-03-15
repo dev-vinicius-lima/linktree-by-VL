@@ -4,7 +4,7 @@ import Input from "../../components/Input";
 import { FiTrash2 } from "react-icons/fi";
 import { db } from "../../Services/firebaseConecction";
 import {
-  addDoc, // adiconar doc
+  addDoc,
   collection,
   onSnapshot,
   query,
