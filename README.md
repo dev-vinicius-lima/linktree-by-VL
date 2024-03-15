@@ -22,7 +22,7 @@ Linktree by VL é uma plataforma intuitiva e fácil de usar que permite aos usu�
 
 ## Como Começar
 
-1. Acesse [https://linktreebyvl.vercel.app/login].
+1. Acesse https://linktreebyvl.vercel.app/login.
 2. Utilize a conta visitante: Email => visitante@teste.com  SENHA: 123456
 3. Configure seu Linktree adicionando links e personalizando o design.
 4. Compartilhe seu Linktree nas suas redes sociais e monitore o desempenho para fazer ajustes conforme necessário.
