@@ -22,7 +22,7 @@ const Login = () => {
         navigate("/admin", { replace: true });
       })
       .catch((error) => {
-        console.log("Erro ao fazer login:");
+        alert("Usuário ou senha inválida!");
         console.log(error);
       });
   }

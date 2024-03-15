@@ -18,7 +18,7 @@ function Private({ children }: PrivateProps) {
           email: user.email,
         };
 
-        localStorage.setItem("@linktreeRact", JSON.stringify(userData));
+        localStorage.setItem("@linktreeReact", JSON.stringify(userData));
         setLoading(false);
         setSigned(true);
       } else {
@@ -30,7 +30,7 @@ function Private({ children }: PrivateProps) {
       unsub();
     };
   }, []);
-  if (loading) return <div></div>;
+  if (loading) return <div>Carregando ...</div>;
   if (!signed) {
     return <Navigate to={"/login"} />;
   }
