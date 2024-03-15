@@ -63,7 +63,7 @@ const Admin = () => {
     }
     addDoc(collection(db, "links"), {
       name: nameInput,
-      ulr: urlInput,
+      url: urlInput,
       bg: bgColorInput,
       color: textColorInput,
       created: new Date(),

@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Login from "./pages/Login";
 import Networks from "./pages/Networks";
+import ErrorPage from "./pages/error";
 
 import Private from "./pages/routes/Private";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         <Networks />
       </Private>
     ),
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
 
