@@ -11,9 +11,15 @@ const Header = () => {
     <header className="w-full max-w-2xl mt-4 px-1">
       <nav className="w-full bg-white h-12 flex items-center justify-between rounded-md px-3">
         <div className="flex gap-4 font-medium">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/admin"}>Links</Link>
-          <Link to={"/admin/social"}>Redes Sociais</Link>
+          <Link to={"/"} className=" hover:text-sky-500">
+            Links Ativos
+          </Link>
+          <Link to={"/admin"} className=" hover:text-sky-500">
+            Criar Links
+          </Link>
+          <Link to={"/admin/social"} className=" hover:text-sky-500">
+            Redes Sociais
+          </Link>
         </div>
 
         <button onClick={handleLogout}>
